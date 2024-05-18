@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://afterlife:mypass@cluster0.jnyqyp8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("") // paste mongo db link here
 .then(()=>app.listen(3001))
 .then(()=>console.log('connected'))
 .catch((err)=>console.log(err))
